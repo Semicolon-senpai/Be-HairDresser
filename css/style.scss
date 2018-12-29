@@ -1,0 +1,155 @@
+@keyframes Navigation_Slide {
+  0% {
+    opacity:0;
+    transform:translateY(-100px);
+  }
+  100% {
+    opacity:1;
+    transform:translate(0);
+  }
+}
+
+$Header-Font: "Yeseva";
+$Paragraph-Font: "Poppins";
+$Nav-Font: "Roboto";
+
+$Header-Color: #2c3d51;
+$Paragraph-Color: #86919e;
+$Main-color: rgb(215,137,133);
+
+Body {
+  padding : 0;
+  margin  : 0; 
+}
+
+.row:first-child {
+  position:fixed;
+  width:100%;
+  background-color: $Header-Color;
+  text-align:center;
+  padding: 5px 12px;
+  display:none;
+  ul {
+    color: white;
+    font-family: $Nav-Font;
+    font-size: 14px;
+   text-transform:uppercase;
+    span:first-child {
+      letter-spacing: 2px;
+      color: white;
+    }
+    span:nth-child(2) {
+      a {
+        margin-left:10px ;
+        margin-right: 10px;
+        padding-bottom: 1.2rem;
+        letter-spacing: .5px;
+        &:first-child {
+          margin-left: 20rem;
+        }   
+        &:last-child {
+          color: $Main-color;
+          margin-left: 25px;
+          
+        }
+        &:hover {
+          color: $Main-color;
+          cursor:pointer;
+          border-bottom: 5px solid $Main-color;
+          transition: all;
+        }
+      }
+     
+      
+    }
+  }
+
+}
+.Header_Container_Image {
+  background-image: linear-gradient(to right bottom, rgba(66, 63, 63, 0.7), rgba(34, 33, 33, 0.6)),url("../Images/attractive-beautiful-beauty-458718.jpg");
+  background-size: cover;
+  background-position: center ;
+  height: 110vh;
+  width:100%;
+  display: grid;
+
+  .upper-menu {
+    background-color:transparent;
+    padding-top: 3rem;
+    text-align: center;
+    display: grid;
+  
+    width:100%;
+    color:white;
+  
+    transition: all .5s;
+    span {
+      font-family: $Paragraph-Font;
+      text-transform: uppercase;
+      letter-spacing:1.5px;
+    }
+    ul {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $Nav-Font;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      
+      a{
+        margin-left:15px;
+        margin-right:15px;
+        padding-bottom:5px;
+        &:hover{
+          cursor:pointer;
+          color: $Main-color; 
+          border-bottom: 1px solid $Main-color;
+          transition: all;
+          
+        }
+      }
+    }
+  
+  }
+  .Header_Container {
+    text-align:center;
+    padding-top:10rem;
+  
+
+      span {
+      font-family:"Playfair Display";
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 23px;
+      letter-spacing: 2px;
+      color: white;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      padding: 90px 80px;
+    }
+  
+    input[type="button"] {
+      background-color: $Main-color;
+      border:none;
+      margin-top:5rem;
+      padding: 15px 50px;
+      color: white;
+      font-family: poppins;
+      font-size:14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+}
+
+.row:nth-child(2) {
+  img {
+    width:200px;
+  }
+}
