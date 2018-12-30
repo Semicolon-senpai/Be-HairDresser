@@ -159,7 +159,71 @@ Body {
   cursor: pointer;
 }
 
-.row:nth-child(2) img {
-  width: 200px;
+.second_row {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.second_row span:first-child {
+  color: #EFF2F6;
+  font-family: "Playfair Display";
+  font-size: 200px;
+  font-weight: 700;
+}
+
+.second_row .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 50%;
+      grid-template-columns: 40% 50%;
+  padding-bottom: 8rem;
+  margin-left: 10rem;
+  -webkit-box-shadow: 10px 10px 10px rgba(77, 74, 74, 0.319);
+          box-shadow: 10px 10px 10px rgba(77, 74, 74, 0.319);
+  text-align: center;
+  width: 70%;
+}
+
+.second_row .container img {
+  width: 468px;
+  height: 580px;
+  margin-top: -17%;
+}
+
+.second_row .container span {
+  margin-top: 40%;
+  margin-left: 7rem;
+}
+
+.second_row .container span h3 {
+  font-family: "Yeseva";
+  font-weight: bolder;
+  font-size: 30px;
+  color: #2c3d51;
+  text-align: left;
+}
+
+.second_row .container span p {
+  font-family: "Poppins";
+  color: #86919e;
+  text-align: left;
+}
+
+.third_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.third_row .third_row--checklist ul li {
+  list-style: circle;
+}
+
+.third_row img {
+  width: 671px;
+  height: 720px;
+  margin-top: -7%;
+  z-index: -3;
 }
 /*# sourceMappingURL=style.css.map */
